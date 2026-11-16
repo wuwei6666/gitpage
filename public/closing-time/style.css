@@ -1,0 +1,42 @@
+:root{--background:#F7F4EB;--ink:#303B3D;--accent:#4C628A;--muted:#626E68;--line:#D5D9D0}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--background);color:var(--ink);font:17px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--accent);text-underline-offset:.22em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+header,main,footer{max-width:760px;margin:auto;padding:28px 24px}
+header{display:flex;gap:20px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{color:var(--ink);text-decoration:none;letter-spacing:.05em;font-weight:600}
+.brand span{font-size:25px;vertical-align:-2px;margin-right:8px}
+nav{display:flex;flex-wrap:wrap;gap:18px;font-size:14px}
+main{padding-top:52px;padding-bottom:48px}
+h1{font-size:clamp(32px,7vw,46px);font-weight:600;letter-spacing:-.04em;line-height:1.2;margin:12px 0 18px}
+h2{font-size:28px;line-height:1.35;letter-spacing:-.02em;margin:45px 0 18px}
+h3{font-size:19px;font-weight:600;margin:30px 0 8px}
+p{margin:10px 0 18px}
+li{margin:10px 0}
+ul{padding-left:23px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.intro{font-size:20px;color:var(--muted);max-width:580px}
+.contact{padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:30px 0}
+.email{font-size:clamp(19px,5vw,25px);overflow-wrap:anywhere}
+small,.quiet{font-size:14px;color:var(--muted)}
+.language{padding-top:12px;border-top:1px solid var(--line);margin-top:52px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:600;cursor:pointer}
+details p{margin:14px 0 4px}
+footer{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-bottom:40px}
+footer p{margin:5px 0}
+@media(max-width:460px){header{align-items:flex-start;flex-direction:column;gap:12px}
+main{padding-top:32px}
+h2{font-size:25px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+}
+
+
+h1,h2,.brand{font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+
+[lang="zh-Hans"] h2,[lang="zh-Hans"] .eyebrow{letter-spacing:0}
